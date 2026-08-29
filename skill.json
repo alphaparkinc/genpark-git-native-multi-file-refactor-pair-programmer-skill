@@ -1,0 +1,38 @@
+{
+  "name": "genpark-git-native-multi-file-refactor-pair-programmer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Git-native multi-file pair programmer generating structured git diffs with tree-sitter AST symbol mapping.",
+  "author": "genpark",
+  "category": "pair-programming",
+  "tags": [
+    "aider",
+    "git-native",
+    "pair-programming",
+    "tree-sitter",
+    "multi-file-refactor"
+  ],
+  "inputs": {
+    "refactor_prompt": {
+      "type": "string"
+    },
+    "affected_files_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "refactor_commit_id": {
+      "type": "string"
+    },
+    "git_commit_hash": {
+      "type": "string"
+    },
+    "modified_files_count": {
+      "type": "integer"
+    },
+    "git_diff_summary": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
